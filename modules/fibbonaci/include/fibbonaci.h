@@ -25,6 +25,7 @@ struct dng_fibbonaci_i {
 
 	uint16_t (*get_fibbonaci_number)(uint16_t *index);
 	uint16_t (*get_next)(struct dng_fibbonaci_o* inst);
+	void (*reset)(struct dng_fibbonaci_o* inst);
 };
 
 void load_fibbonaci(struct dng_api_registry_i *reg, bool reload);
